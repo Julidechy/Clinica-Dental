@@ -1,0 +1,23 @@
+{
+  "name": "public_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:tailwind": "npx tailwindcss-cli@latest build assets/css/tailwind.css -o assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/gorillasite/clinica-dental-riera.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/gorillasite/clinica-dental-riera/issues"
+  },
+  "homepage": "https://gitlab.com/gorillasite/clinica-dental-riera#readme"
+}

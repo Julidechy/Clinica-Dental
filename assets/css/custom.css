@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#marker  {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000;
+    bottom: -8px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+/*
+
+    FADE IN ANIMATION
+
+*/
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+.hidden-formula {
+    opacity: 0;
+}
+
+/*
+
+    FLOATING LABELS
+
+*/
+.form-label {
+    opacity: 1;
+    transform: translateY(-1.25rem);
+    transform-origin: 0 0;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #1a202c;
+}
+
+.form-control:focus + .form-label, 
+.form-control:not(:placeholder-shown) + .form-label {
+    transform: translateY(-3rem);
+}
+
+/*  
+
+    BEFORE/AFTER SLIDER
+
+*/
+
+#resizer-1, #resizer-2, #resizer-3 {
+    /*Stop vertical scrolling on touch*/
+    -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  }
+  
+  #resizer-1:after, #resizer-2:after, #resizer-3:after {
+    background:#9E9786;
+    font-family: "Font Awesome 5 Free";
+    content:'\f337';
+    font-weight:900;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    position:absolute;
+    margin: 0 0 0 -17px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:3px solid white;
+  
+  }

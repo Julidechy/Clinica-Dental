@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("/assets/fonts/century-gothic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Century Gothic";
+    src: url("/assets/fonts/gothicb.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
